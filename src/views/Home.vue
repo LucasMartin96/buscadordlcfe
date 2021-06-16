@@ -1,12 +1,10 @@
 <template>
 <v-container>
+  
   <search-box/>
   <div v-if="this.resultados.length > 0">
     <resultados></resultados>
   </div>
-  <v-btn @click="test()">
-    Test
-  </v-btn>
 </v-container>
 </template>
 

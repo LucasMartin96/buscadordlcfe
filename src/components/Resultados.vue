@@ -11,10 +11,7 @@
               CantidadPalabras
             </th>
             <th class="text-left">
-              Frecuencia
-            </th>
-            <th class="text-left">
-              Peso
+              Palabras
             </th>
           </tr>
         </thead>
@@ -22,8 +19,6 @@
           <tr v-for="r in resultados" :key="r.documento.titulo">
             <td>{{ r.documento.titulo }}</td>
             <td>{{ r.documento.cantidadPalabras }}</td>
-            <td>{{ r.palabras[0].frecuencia }}</td>
-            <td>{{ r.palabras[0].peso }}</td>
             <td><v-btn @click="showHideDialog(r)">Detalle</v-btn></td>
           </tr>
         </tbody>
